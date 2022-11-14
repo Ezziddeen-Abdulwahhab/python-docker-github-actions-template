@@ -1,0 +1,11 @@
+version: "3.0"
+services:
+  app:
+    build:
+      context: .
+      args:
+        - DEV=true
+    volumes:
+      - ./app:/app
+    command: >
+      echo "Insert command here that runs your application."
